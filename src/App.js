@@ -6,10 +6,16 @@
 
 import React, {Component} from 'react';
 import RootStack from './navigation/'
+import SplashScreen from 'react-native-splash-screen'
 console.disableYellowBox = true;
 console.warn('YellowBox is disabled.');
 
 export default class App extends Component {
+    componentDidMount() {
+		setTimeout(() => {
+            SplashScreen.hide();
+        }, 1500)
+    }
 	render() {
 		return (
 			<RootStack />
