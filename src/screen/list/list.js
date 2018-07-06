@@ -32,7 +32,6 @@ export default class My extends BaseComponet {
             page: page
         })
             .then(res => {
-                console.log(res.items);
                 this.setState({
                     fundList: [...this.state.fundList, ...res.items]
                 })
@@ -77,7 +76,7 @@ export default class My extends BaseComponet {
      * @returns {string}
      * @private
      */
-    _keyExtractor = (item, index) => `${item.id}`;
+    _keyExtractor = (item, index) => `${item.id}`
 
     // list头部
     _header = () => {

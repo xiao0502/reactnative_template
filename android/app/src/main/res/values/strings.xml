@@ -1,4 +1,3 @@
 <resources>
-    <string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey">NHUUWTfHqG7GGO_DVu1TbQmcrRG648d5a738-4a44-455d-89d5-3ef363a826ee</string>
     <string name="app_name">reactnative_template</string>
 </resources>

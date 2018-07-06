@@ -10,7 +10,6 @@ import {Button} from 'react-native-elements';
 import API from '../../assets/js/api'
 import screen from '../../assets/js/screen'
 import Toast, {DURATION} from 'react-native-easy-toast'
-import { Icon } from 'react-native-elements'
 
 export default class Home extends BaseComponet {
     constructor(props) {
@@ -77,7 +76,7 @@ export default class Home extends BaseComponet {
     }
 
     getData = () => {
-
+        console.log(123);
         API.getBannerList()
             .then(res => {
                 console.log(res);

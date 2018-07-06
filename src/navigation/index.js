@@ -3,7 +3,7 @@ import {
 	createStackNavigator,
 	createBottomTabNavigator
 } from 'react-navigation'
-import { Icon } from 'react-native-elements'
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 import Home from '../screen/home/home'
 import List from '../screen/list/list'
@@ -20,9 +20,11 @@ const TabStack = createBottomTabNavigator(
 				tabBarIcon: ({focused, tintColor}) => (
                     focused?
                         <Icon
+                            size={20}
                             color='#4287f6'
 							name='home'/>:
                         <Icon
+                            size={20}
                             color='#c6c6c6'
 							name='home'/>
 				)
@@ -35,9 +37,11 @@ const TabStack = createBottomTabNavigator(
                 tabBarIcon: ({focused, tintColor}) => (
                     focused?
                         <Icon
+							 size={16}
                             color='#4287f6'
                             name='list'/>:
                         <Icon
+							 size={16}
                             color='#c6c6c6'
                             name='list'/>
                 )
@@ -50,9 +54,11 @@ const TabStack = createBottomTabNavigator(
 				tabBarIcon: ({focused, tintColor}) => (
                     focused?
                         <Icon
+							 size={18}
                             color='#4287f6'
                             name='info'/>:
                         <Icon
+							 size={18}
                             color='#c6c6c6'
                             name='info'/>
 				)

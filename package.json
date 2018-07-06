@@ -4,16 +4,20 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "build-ios": "node node_modules/react-native/local-cli/cli.js bundle --entry-file index.js  --platform ios --dev false --bundle-output ./ios/bundle/main.jsbundle --assets-dest ./ios/bundle",
+    "push-ios": "code-push release reactnativeTemplateIos ./ios/bundle 1.0.0"
   },
   "dependencies": {
     "@expo/vector-icons": "^6.3.1",
+    "lodash": "^4.17.10",
     "react": "16.3.1",
     "react-native": "0.55.4",
     "react-native-code-push": "^5.3.5",
     "react-native-easy-toast": "^1.1.0",
     "react-native-elements": "^0.19.1",
     "react-native-splash-screen": "^3.0.9",
+    "react-native-vector-icons": "^4.6.0",
     "react-navigation": "^2.5.5"
   },
   "devDependencies": {
