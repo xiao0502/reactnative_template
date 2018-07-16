@@ -50,6 +50,9 @@
     利用 `react-native-storage` 加上rn内置 `AsyncStorage` 在全局定义了storage记录登录状态
 
 
+#### 10. 集成mobx全局状态
+
+    利用 `mobx` 加上 `mobx-react` 进行全局状态管理
 
 
 
